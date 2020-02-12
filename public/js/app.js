@@ -29895,7 +29895,18 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
-$(document).ready(function () {});
+$(document).ready(function () {
+  $('.fa-plus').click(function () {
+    $(this).parent().next('.risposta').slideDown(200);
+    $(this).hide();
+    $(this).next().show();
+  });
+  $('.fa-minus').click(function () {
+    $(this).parent().next('.risposta').slideUp(200);
+    $(this).hide();
+    $(this).prev().show();
+  });
+});
 
 /***/ }),
 

@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('prova');
-});
+    return view('home');
+})->name('homepage');
+
+Route::get('/domande_frequenti', function () {
+    return view('domande_frequenti');
+})->name('faq');

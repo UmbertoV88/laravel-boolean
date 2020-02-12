@@ -1,0 +1,45 @@
+.domFreq {
+    padding: 50px 80px;
+    color:#1B3C59;
+}
+
+.p-d-corso {
+    display: flex;
+    padding: 0;
+    .p-corso,
+    .d-corso{
+        padding: 50px 70px;
+        h2 {
+            margin-bottom: 30px;
+        }
+        h3 {
+            margin-bottom:30px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        p{
+            margin-bottom:16px;
+        }
+    }
+}
+.p-corso{
+    background: #e8ebf1;
+    color:#1B3C59;
+
+}
+.d-corso{
+    background: #1B3C59;
+    color:#e8ebf1;
+
+}
+
+.fa-plus,
+.fa-minus{
+    float: right;
+}
+.active {
+    display: block;
+}
+.disactive {
+    display: none;
+}
